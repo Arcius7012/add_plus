@@ -1,0 +1,2 @@
+cls
+.\tools\allure\bin\allure.bat generate --clean .\build\out\smoke\allure -o .\build\out\smoke\allure\allure-report && .\tools\allure\bin\allure.bat open .\build\out\smoke\allure\allure-report --host 127.0.1.1
