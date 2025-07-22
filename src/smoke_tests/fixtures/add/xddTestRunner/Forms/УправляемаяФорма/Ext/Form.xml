@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -341,22 +342,47 @@
 					<ContextMenu name="ИндикаторВыполненияКонтекстноеМеню" id="130"/>
 					<ExtendedTooltip name="ИндикаторВыполненияРасширеннаяПодсказка" id="463"/>
 				</ProgressBarField>
-				<LabelDecoration name="ДекорацияНастройкиЗагружены" id="482">
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Title formatted="false">
+				<UsualGroup name="ГруппаНастройки" id="487">
+					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>&lt;Настройки не загружены&gt;</v8:content>
+							<v8:content>Группа настройки</v8:content>
 						</v8:item>
 					</Title>
-					<Hyperlink>true</Hyperlink>
-					<ContextMenu name="ДекорацияНастройкиЗагруженыКонтекстноеМеню" id="483"/>
-					<ExtendedTooltip name="ДекорацияНастройкиЗагруженыРасширеннаяПодсказка" id="484"/>
-					<Events>
-						<Event name="Click">ЗагрузитьНастройкиИзФайла</Event>
-					</Events>
-				</LabelDecoration>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="488"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияНастройкиЗагружены" id="482">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Настройки не загружены&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияНастройкиЗагруженыКонтекстноеМеню" id="483"/>
+							<ExtendedTooltip name="ДекорацияНастройкиЗагруженыРасширеннаяПодсказка" id="484"/>
+							<Events>
+								<Event name="Click">ЗагрузитьНастройкиИзФайла</Event>
+							</Events>
+						</LabelDecoration>
+						<Button name="Обновить" id="485">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="486"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -371,6 +397,7 @@
 				<Field>1/0:092b3fc1-7ced-4d20-8a28-79b535f8a9c4</Field>
 				<Field>1/0:a2724854-2f5c-4048-b7b2-02cbb9cb7fa3</Field>
 				<Field>1/0:e46a4b91-3cc7-4188-b6f0-96c31aa42e19</Field>
+				<Field>Объект.ПутьФайлаНастроек</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ИндикаторВыполнения" id="16">
@@ -806,6 +833,26 @@
 			</Picture>
 			<Action>ТехническаяИнформация</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>
