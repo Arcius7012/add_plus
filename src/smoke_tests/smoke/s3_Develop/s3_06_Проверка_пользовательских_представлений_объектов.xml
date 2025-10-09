@@ -6,21 +6,21 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>48527876-9840-4919-b467-765ba234c0d2</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.Тесты_ПроверкаПользовательскихПредставленийОбъектов" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.s3_06_Проверка_пользовательских_представлений_объектов" category="Object">
 				<xr:TypeId>d3dd76ef-bf7d-4731-b174-3537fd276f45</xr:TypeId>
 				<xr:ValueId>7c8757fa-4107-4181-8a9e-6143f652d10d</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Тесты_ПроверкаПользовательскихПредставленийОбъектов</Name>
+			<Name>s3_06_Проверка_пользовательских_представлений_объектов</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тесты "Проверка пользовательских представлений объектов"</v8:content>
+					<v8:content>s3_06_Проверка_пользовательских_представлений_объектов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.Тесты_ПроверкаПользовательскихПредставленийОбъектов.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.s3_06_Проверка_пользовательских_представлений_объектов.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>

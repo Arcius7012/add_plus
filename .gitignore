@@ -1,0 +1,11 @@
+﻿*Log.txt
+*.log
+*Err.txt
+temp/
+.vscode/
+out/
+builds/
+build/
+DumpFilesIndex.txt
+ConfigDumpInfo.xml
+smoke_run*.cmd

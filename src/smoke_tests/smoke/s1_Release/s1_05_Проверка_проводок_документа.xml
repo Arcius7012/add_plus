@@ -6,17 +6,17 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>779efd25-8f08-4570-9985-54d34c524784</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.тесты_ПроведениеДокументов" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.s1_05_Проверка_проводок_документа" category="Object">
 				<xr:TypeId>55a6d1d9-c608-4d54-b4ab-fd30cfd055dc</xr:TypeId>
 				<xr:ValueId>973684fd-8334-4f26-a08e-747ff9e5a09f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>тесты_ПроведениеДокументов</Name>
+			<Name>s1_05_Проверка_проводок_документа</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проведение и проверка движений до и после</v8:content>
+					<v8:content>s1_05_Проверка_проводок_документа</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

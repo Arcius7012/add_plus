@@ -6,17 +6,17 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>009d3f97-d27d-44dc-b1fa-d8df34984c2c</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.тесты_ФормированиеПечатныхФорм" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.s1_03_Проверка_формирования_печатных_форм" category="Object">
 				<xr:TypeId>4ca8560a-638c-489a-81c3-1988830b6521</xr:TypeId>
 				<xr:ValueId>3a012c82-d3f1-4d6f-9e42-08940d7bb729</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>тесты_ФормированиеПечатныхФорм</Name>
+			<Name>s1_03_Проверка_формирования_печатных_форм</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Формирование печатных форм</v8:content>
+					<v8:content>s1_03_Проверка_формирования_печатных_форм</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
